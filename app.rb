@@ -31,7 +31,7 @@ helpers do
 end
 
 get '/' do
-  File.read('/home/aresnick/Desktop/streetbeest_org/index.html')
+  File.read(File.dirname(__FILE__) + '/index.html')
 end
 
 post '/mailinglist/signup/:list' do
