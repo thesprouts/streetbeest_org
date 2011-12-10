@@ -1,11 +1,10 @@
-require 'rubygems'
 require "rubygems"
 require "bundler"
 Bundler.require(:default)
 
 
 set :root, File.dirname(__FILE__)
-set :public,  File.dirname(__FILE__) + '/public'
+set :public_folder,  './public'
 
 set :cache_enabled, true  # turn it on
 
