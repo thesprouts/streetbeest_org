@@ -1,7 +1,8 @@
 require 'rubygems'
-require 'sinatra'
-require 'sinatra/cache'
-require 'pony'
+require "rubygems"
+require "bundler"
+Bundler.require(:default)
+
 
 set :root, File.dirname(__FILE__)
 set :public,  File.dirname(__FILE__) + '/public'
