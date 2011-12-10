@@ -10,7 +10,12 @@ set :cache_enabled, true  # turn it on
 
 set :environment, :production
 
+approot = File.dirname(__FILE__)
+set :root, approot
+
+$: << File.join(approot, "vendor")
 require 'gappsprovisioning/provisioningapi'
+
 include GAppsProvisioning
 
 helpers do
