@@ -36,7 +36,7 @@ helpers do
 end
 
 get '/' do
-  File.read(File.dirname(__FILE__) + '/index.html')
+  File.read(File.join(settings.public_folder, 'index.html'))
 end
 
 post '/mailinglist/signup/:list' do
